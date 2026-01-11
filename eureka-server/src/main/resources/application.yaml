@@ -1,0 +1,12 @@
+server:
+  port: 8761   # Port standard du serveur Eureka
+
+eureka:
+  client:
+    register-with-eureka: false   # Le serveur ne s'enregistre pas lui-même
+    fetch-registry: false         # Il ne consomme pas le registre, il le fournit
+
+logging:
+  level:
+    com.netflix.eureka: OFF
+    com.netflix.discovery: OFF
